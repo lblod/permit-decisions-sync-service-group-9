@@ -73,9 +73,7 @@ async function startSync() {
     // `;
 
     // Workaround: parse RDFa in snippet instead of querying for triples since extraction doesn't work yet
-    const submission = `http://data.lblod.gift/id/aanvraag/mocksubmission1`;
-    const rdfaSnippet = `property="https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp" resource="${submission}"`;
-    // const rdfaSnippet = `property="https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp" resource="${binding['submission'].value}"`;
+    const rdfaSnippet = `property="https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp" resource="${binding['submission'].value}"`;
     q = `
       PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
       PREFIX omgeving: <https://data.vlaanderen.be/ns/omgevingsvergunning#>
