@@ -52,7 +52,7 @@ async function startSync() {
          omgeving:voorwerp ?submission .
      }
   }
- } ORDER BY DESC(?submissionDate) LIMIT 100
+ } ORDER BY DESC(?submissionDate)
   `;
 
   let result = await querySudo(q);
